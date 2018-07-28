@@ -1,7 +1,7 @@
 Ansible Role: Maven3
 =========
 
-Install OracleJDK8 for CentOS and Ubuntu linux.
+Install Maven3 for CentOS and Ubuntu linux.
 
 Requirements
 ------------
