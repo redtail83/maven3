@@ -1,0 +1,24 @@
+---
+# tasks file for maven3
+
+# install Maven3
+- name: download Maven3 from official site
+  get_url:
+    url: "{{ site_url }}/apache/maven/maven-3/{{ maven3_version }}/binaries/apache-maven-{{ maven3_version }}-bin.tar.gz"
+    dest: /tmp
+    mode: 0440
+
+- name: make directory for Maven3
+  file: path=/opt/maven3 state=directory mode=0775
+
+- name: unarchive Maven3
+  unarchive:
+    src: "/tmp/apache-maven-{{ maven3_version }}-bin.tar.gz"
+    dest: /opt/maven3
+    copy: no
+
+- name: make symbolic links for Maven3
+  file: src="/opt/maven3/apache-maven-{{ maven3_version }}" dest='/opt/maven3/current' state=link
+
+- name: be sure enviroment valiable is configured
+  template: src=maven3.sh.j2 dest=/etc/profile.d/maven3.sh

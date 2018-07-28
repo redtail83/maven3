@@ -1,0 +1,8 @@
+---
+# vars file for maven3
+
+# Base URL of Maven3 download site.
+site_url: http://ftp.jaist.ac.jp/pub
+
+# Maven version.
+maven3_version: 3.5.4
