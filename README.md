@@ -17,7 +17,7 @@ Here is the list of all variables for this role.
 site_url: http://ftp.jaist.ac.jp/pub
 
 # Maven version.
-maven3_version: 3.5.4
+maven3_version: 3.6.0
 ```
 
 Dependencies
