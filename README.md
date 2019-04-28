@@ -17,7 +17,7 @@ Here is the list of all variables for this role.
 site_url: http://ftp.jaist.ac.jp/pub
 
 # Maven version.
-maven3_version: 3.6.0
+maven3_version: 3.6.1
 ```
 
 Dependencies
@@ -25,7 +25,7 @@ Dependencies
 
 This role depends on:
 
-* redtail83.oraclejdk8
+* redtail83.adoptopenjdk8_hotspot
 
 Example Playbook
 ----------------
